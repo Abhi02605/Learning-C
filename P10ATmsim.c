@@ -8,7 +8,6 @@ int main() {
     int attempts = 0;
     
     
-    // ── STEP 2: PIN verification ─────────────────────
     printf("==============================\n");
     printf("     Welcome to Advaita Bank      \n");
     printf("==============================\n");
@@ -31,10 +30,9 @@ int main() {
 
     printf("\n✅ PIN Verified! Welcome.\n");
 
-    // ── STEP 3: main ATM loop ─────────────────────────
+   
     do {
 
-        // show menu every loop
         printf("\n==============================\n");
         printf("        ATM MAIN MENU         \n");
         printf("==============================\n");
@@ -49,14 +47,13 @@ int main() {
 
         switch (choice) {
 
-            // ── CASE 1: check balance ─────────────
+          
             case 1:
                 printf("------------------------------\n");
                 printf("  Current Balance: Rs %.2f\n", balance);
                 printf("------------------------------\n");
                 break;
 
-            // ── CASE 2: withdraw ──────────────────
             case 2:
                 printf("Enter amount to withdraw: Rs ");
                 scanf("%f", &amount);
@@ -78,7 +75,6 @@ int main() {
                 }
                 break;
 
-            // ── CASE 3: deposit ───────────────────
             case 3:
                 printf("Enter amount to deposit: Rs ");
                 scanf("%f", &amount);
@@ -95,13 +91,13 @@ int main() {
                 }
                 break;
 
-            // ── CASE 4: exit ──────────────────────
+           
             case 4:
                 printf("Thank you for using Advaita Bank!\n");
                 printf("Please collect your card.\n");
                 break;
 
-            // ── DEFAULT: wrong input ──────────────
+            
             default:
                 printf("❌ Invalid choice!\n");
                 printf("   Please enter 1 to 4.\n");
